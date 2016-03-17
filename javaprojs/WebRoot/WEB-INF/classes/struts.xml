@@ -9,5 +9,9 @@
 			<result name="success">/result.jsp</result>
 			<result name="input">/login.jsp</result>
 		</action>
+		
+		<action name="pointConverter" class="com.test.action.PointAction">
+			<result name="success">/output.jsp</result>
+		</action>
 	</package>
 </struts>
