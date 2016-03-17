@@ -7,6 +7,7 @@
 	<package name="struts2" extends="struts-default">
 		<action name="login" class="com.test.action.LoginAction">
 			<result name="success">/result.jsp</result>
+			<result name="input">/login.jsp</result>
 		</action>
 	</package>
 </struts>

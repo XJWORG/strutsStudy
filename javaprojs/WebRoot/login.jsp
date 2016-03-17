@@ -1,9 +1,9 @@
-<%@ page language="java" isELIgnored="false" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" isELIgnored="false" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -23,10 +23,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form action="login.action" method="post">
-    	username:<input type="text" name="username"><br>
-    	password:<input type="password" name="password"><br>
-    	<input type="submit" value="submit">
-    </form>
+  	<s:form action="login" >
+  		<s:textfield name="username" label="username"></s:textfield>
+  		<s:password name="password" label="password"></s:password>
+  		<s:submit name="submit"></s:submit>
+  	</s:form>
+
   </body>
 </html>

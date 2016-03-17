@@ -1,7 +1,13 @@
 package com.test.action;
 
-public class LoginAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String username ;
 	private String password ;
 	
@@ -17,10 +23,14 @@ public class LoginAction {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	public String execute() throws Exception{
-		return "success" ;
+	@Override
+	public void validate() {
+		
+		if("".equals(this.getUsername().trim()) || "".equals(this.getPassword().trim())){
+			this.addFieldError("username", "username or password required !") ;
+		}
 		
 	}
+	
 	
 }
