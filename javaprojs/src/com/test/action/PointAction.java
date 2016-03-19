@@ -1,17 +1,28 @@
 package com.test.action;
 import java.util.Date;
+import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.test.action.Point;
 public class PointAction extends ActionSupport{
 	
-	private Point point;
+//	private Point point ;
+	
+	private List<Point> point;
 	private String name;
 	private int age;
 	private Date date;
 
 	
 	
+	public List<Point> getPoint() {
+		return point;
+	}
+
+	public void setPoint(List<Point> point) {
+		this.point = point;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -35,14 +46,14 @@ public class PointAction extends ActionSupport{
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
-	public Point getPoint() {
-		return point;
-	}
-
-	public void setPoint(Point point) {
-		this.point = point;
-	}
+//
+//	public Point getPoint() {
+//		return point;
+//	}
+//
+//	public void setPoint(Point point) {
+//		this.point = point;
+//	}
 
 	@Override
 	public String execute() throws Exception {

@@ -26,6 +26,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<s:form action="pointConverter">
 		Use diliter to split x and y <br>
 		<s:textfield name="point" label="point"></s:textfield>
+		<s:textfield name="point" label="point2"></s:textfield>
+		<s:textfield name="point" label="point3"></s:textfield>
 		<s:textfield name="name" label="name"></s:textfield>
 		<s:textfield name="age" label="age"></s:textfield>
 		<s:textfield name="date" label="Birthday"></s:textfield>
