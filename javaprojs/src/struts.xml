@@ -13,5 +13,10 @@
 		<action name="pointConverter" class="com.test.action.PointAction">
 			<result name="success">/output.jsp</result>
 		</action>
+		
+		<action name="register" class="com.test.action.RegisterAction">
+			<result name="success">/success.jsp</result>
+            <result name="input">/register.jsp</result>
+		</action>
 	</package>
 </struts>
