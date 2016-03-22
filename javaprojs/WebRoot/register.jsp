@@ -23,8 +23,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
 <body>
-	<s:form action="register" method="post" >
-		<s:textfield name="username" label="username"></s:textfield>
+    <table align="center" width="40%" style="color:red">
+        <tr>
+            <td>
+                <s:actionerror/>
+            </td>
+        </tr>
+    </table>
+    
+
+	<s:form action="register" method="post" theme="simple">
+		<s:textfield name="username" label="username"></s:textfield><br><br>
 		<s:password name="password" label="password"></s:password>
 		<s:password name="repassword" label="re-password"></s:password>
 		<s:textfield name="age" label="age" ></s:textfield>
@@ -32,6 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:submit name="submit"></s:submit>
 		<s:reset name="reset"></s:reset>
 	</s:form>
+
 
 </body>
 </html>
