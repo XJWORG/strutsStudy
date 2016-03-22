@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </table>
     
 
-	<s:form action="register" method="post" theme="simple">
+	<s:form action="register" method="post" >
 		<s:textfield name="username" label="username"></s:textfield><br><br>
 		<s:password name="password" label="password"></s:password>
 		<s:password name="repassword" label="re-password"></s:password>
