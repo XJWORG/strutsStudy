@@ -25,7 +25,7 @@ public class LoginAction extends ActionSupport{
 	}
 	@Override
 	public void validate() {
-		
+		// something to do
 		if("".equals(this.getUsername().trim()) || "".equals(this.getPassword().trim())){
 			this.addFieldError("username", "username or password required !") ;
 		}
